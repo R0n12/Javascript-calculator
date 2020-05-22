@@ -1,11 +1,5 @@
 ### JavaScript Calculator
 
-### Roles
-* Overall Project Manager: Lang Xu
-* Coding Manager: Daniel Lim
-* Testing Manager: Juhee Park
-* Documentation: Ern Chi Khoo
-
 ### Contributions
 * Jasmohan Bawa: Memory functions, disabling buttons, the design (CSS), memory history
 * Ern Chi Khoo: Functionality for clear, backspace, negative, decimal and square buttons (including event handling)
