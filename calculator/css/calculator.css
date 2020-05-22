@@ -1,0 +1,56 @@
+/*Created 3/29/20 by Jas Bawa*/
+
+body{
+    font-size: 15pt;
+}
+h1{
+    font-size: 50pt;
+    text-align: center;
+    /* standard gradient background */
+    background: linear-gradient(#753a88, #cc2b5e );
+
+    /* clip hackery */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#calcHistory {
+    float:left;
+    /*background:Red;*/
+    width:33%;
+    height:280px;
+    text-align: right;
+}
+#calculator{
+    float:left;
+    /*background:Green;*/
+    width:34%;
+    height:280px;
+    text-align: center;
+}
+#memHistory{
+    float:right;
+    /*background:blue;*/
+    width:33%;
+    height:280px;
+    text-align: left;
+}
+
+input[type=button]{
+    width: 75px;
+    height: 75px;
+    font-size: 20pt;
+}
+
+input[type=text]{
+    width: 315px;
+    height: 50px;
+    font-size: 20pt;
+}
+
+#prevCalc{
+    float: right;
+}
+
+#mocha{
+    margin-top: 600px;
+}

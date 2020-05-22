@@ -1,0 +1,131 @@
+<!-- created 3/2/20 By Daniel Lim -->
+<!-- Edited 2/28/20 By Daniel Lim to add button -->
+<!-- Edited 3/10/20 by Juhee Park: edit layout using divs and add number buttons -->
+<!-- Edited 3/22/20 by Jas Bawa: added memory and equal buttons, and mocha script for in browser testing -->
+<!-- Edited 3/24/20 by Ern Chi Khoo: added second upper display, negative, clear and backspace button -->
+<!-- Edited 3/24/20 by Jas Bawa: Converted memory to chained registration-->
+<!-- Edited 3/27/20 by Daniel Lim: added fifth row -->
+<!-- Edited 3/29/20 by Juhee Park: added display for calculation history -->
+<!-- Edited 3/27/2020 by Ern Chi Khoo: added exponent button -->
+<!-- Edited 3/29/20 by Jas Bawa: Changed organization and styling, and added a CE button-->
+<!-- Edited 3/30/20 by Jas Bawa: Added a missing > messing up the layout-->
+<!-- Edited 3/30/20 by Lang Xu: modified some button's classes and specifications-->
+<!-- Edited 3/30/20 by Lang Xu: Revised testing scripts, added additional testing scripts-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel = "stylesheet" type = "text/css" href = "../css/calculator.css" />
+    <title>The Groovy Calculator</title>
+  </head>
+  <body>
+    <h1>The GROOVY Calculator</h1>
+      <div id="calcHistory">
+        <h3> Calculation History </h3>
+        <table id="prevCalc">
+        </table>
+      </div>
+      <div id= "calculator">
+          <div class="display">
+              <input type="text" name="topDisplay" id="topDisplay" disabled>
+          </div>
+          <div class="display">
+              <input type="text" name="bottomDisplay" id="bottomDisplay" disabled>
+
+          </div>
+          <div>
+              <input type="button" class="memory" id="add" value="M+">
+              <input type="button" class="memory" value="MS">
+              <input type="button" class="memory" id="recall" value="MR">
+              <input type="button" class="memory" id="clear" value="MC">
+          </div>
+          <div class="first-row">
+
+              <input type="button" class="extraOp" id="percentage" value="%" action = "percentage">
+              <input type="button" class="otherButtons" value="C" action = "clearDisplay">
+              <input type="button" class="otherButtons" value="CE" action = "clearBottomDisplay">
+              <input type="button" class="otherButtons" value="<-" action = "backspace">
+
+          </div>
+          <div class="fifth-row">
+              <input type="button" class="extraOp" value="^2" action = "square">
+              <input type="button" class="extraOp" id="squareRoot" value="√" action="squareRoot">
+              <input type="button" class="extraOp" id="inverse" value="1/x" action="inverse">
+              <input type="button" name="operator" class="classicOp" value="/" action="divide">
+          </div>
+          <div class="second-row">
+              <input type="button" class="number" value="7">
+              <input type="button" class="number" value="8">
+              <input type="button" class="number" value="9">
+              <input type="button" name="operator" class="classicOp" value="*" action="multiply">
+          </div>
+          <div class="third-row">
+              <input type="button" class="number" value="4">
+              <input type="button" class="number" value="5">
+              <input type="button" class="number" value="6">
+              <input type="button" name="operator" class="classicOp" value="-" action="subtract">
+          </div>
+          <div class="fourth-row">
+              <input type="button" class="number" value="1">
+              <input type="button" class="number" value="2">
+              <input type="button" class="number" value="3">
+              <input type="button" name="operator" class="classicOp" value="+" action="add">
+          </div>
+          <div class="fifth-row">
+              <input type="button" class="otherButtons" value="+/-" action = "negative">
+              <input type="button" class="number" id="zero" value="0">
+              <input type="button" class="number" id="decimal" value="." action = "decimal">
+              <input type="button" class="classicOp" value="=" action = "equal">
+
+          </div>
+      </div>
+
+      <div id="memHistory">
+          <h3>Memory History</h3>
+          <p><strong>Current: </strong><span id="currentMem">0</span></p>
+          <p><strong>History: </strong></p>
+          <table id="previousMem"></table>
+      </div>
+
+      <!-- This is for in browser Mocha Testing, which allows for DOM Element manipulation -->
+
+      <!--Testing Scripts BEGIN -->
+
+
+<!--      <div id="mocha"></div>-->
+
+<!--      <script src="https://unpkg.com/chai/chai.js"></script>-->
+<!--      <script src="https://unpkg.com/mocha/mocha.js"></script>-->
+
+<!--      <script class="mocha-init">-->
+<!--        mocha.setup('bdd');-->
+<!--      </script>-->
+
+<!--      <script src="../../test/numBottomDisplay.js"></script>-->
+<!--      <script src="../../test/memoryAction.js"></script>-->
+<!--           <script src="../../test/calculateMemOp.js"></script>-->
+<!--          <script src="../../test/extraOpCall.js"></script>-->
+<!--      <script src="../../test/updateMemoryHistory.js"></script>-->
+<!--      <script src="../../test/clearBottomDisplay.js"></script>-->
+<!--      <script src="../../test/negative.js"></script>-->
+<!--      <script src="../../test/clearDisplay.js"></script>-->
+<!--      <script src="../../test/backspace.js"></script>-->
+<!--      <script src="../../test/refreshTop.js"></script>-->
+<!--      <script src="../../test/classicOpDisplay.js"></script>-->
+<!--     <script src="../../test/updateCalcHistory.js"></script>-->
+<!--      <script src="../../test/classicOpCall.js"></script>-->
+<!--      <script src="../../test/extraOpDisplay.js"></script>-->
+
+
+<!--      <script class="mocha-exec">-->
+<!--        mocha.run();-->
+<!--      </script>-->
+
+     <!-- Testing Scripts END -->
+
+     <script type="text/javascript" src="../javascript/calculator.js"></script>
+
+   </body>
+</html>
