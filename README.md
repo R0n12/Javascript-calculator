@@ -1,4 +1,3 @@
-# Project 5
 ### JavaScript Calculator
 
 ### Roles
